@@ -1,0 +1,68 @@
+.antlr-editor {
+  position: relative;
+  height: 70vh;
+  resize: vertical;
+}
+
+.CodeMirror {
+  height: 100%;
+}
+
+.wrapper {
+  overflow-y: hidden;
+}
+
+.vtltoolbar, 
+.vtltoolbar > * {
+  height: 25px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.vtlLogo {
+  max-height: 20%;
+  max-width: 20%;
+}
+
+.tab-content, 
+.content, 
+.content > div {
+  padding: 0 !important;
+}
+
+.nav-tabs {
+  height: 45px;
+}
+
+.tab-content .tab-pane {
+  height: calc(100vh - 45px);
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* Code editor tab contents */
+.tab-content .tab-pane.active:first-child {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+#vtl_output {
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+#saveas {
+  margin: 6px 5px 6px 15px;
+  color: #444;
+}
+
+.tab-disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
